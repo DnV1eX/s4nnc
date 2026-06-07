@@ -27,12 +27,8 @@ let package = Package(
     .package(
       url: "https://github.com/weiyanlin117/swift-fpzip-support.git",
       revision: "0ec6d4668c9c83bc3da0f8b2d6dfc46da0b98609"),
-    .package(
-      url: "https://github.com/apple/swift-protobuf.git",
-      revision: "d57a5aecf24a25b32ec4a74be2f5d0a995a47c4b"),
-    .package(
-      url: "https://github.com/apple/swift-system.git",
-      revision: "fbd61a676d79cbde05cd4fda3cc46e94d6b8f0eb"),
+    .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.27.0"),
+    .package(url: "https://github.com/apple/swift-system.git", from: "1.4.0"),
   ],
   targets: [
     // C_zlib - System zlib wrapper
